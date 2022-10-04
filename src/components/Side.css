@@ -1,0 +1,90 @@
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    /* background: red; */
+}
+.card{
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    margin: 25px;
+    opacity: 0;
+    transition: opacity;
+    animation: movs 2s forwards ease-out;
+    /* position: relative; */
+}
+
+.cards .card:nth-child(1) {
+    transform: translateX(-750px);
+    animation-delay: 0.5s;
+}
+
+.cards .card:nth-child(2) {
+    transform: translateX(750px);
+    animation-delay: 1s;
+}
+
+.cards .card:nth-child(3) {
+    transform: translateX(-750px);
+    animation-delay: 1.5s;
+}
+
+.cards .card:nth-child(4) {
+    transform: translateX(750px);
+    animation-delay: 2s;
+}
+
+.cards .card:nth-child(5) {
+    transform: translateX(-750px);
+    animation-delay: 2.5s;
+}
+
+.a{
+    color: #fff;
+}
+
+@keyframes movs {
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 940px) {
+    .cards {
+        justify-content: space-around;
+        /* transform: translate(-750px); */
+    }  
+    .cards .card:nth-child(1) {
+        transform: translateX(-750px);
+        animation-delay: 0.5s;
+    }
+    
+    .cards .card:nth-child(2) {
+        transform: translateX(-750px);
+        animation-delay: 1s;
+    }
+    
+    .cards .card:nth-child(3) {
+        transform: translateX(-750px);
+        animation-delay: 1.5s;
+    }
+    
+    .cards .card:nth-child(4) {
+        transform: translateX(-750px);
+        animation-delay: 2s;
+    }
+    
+    .cards .card:nth-child(5) {
+        transform: translateX(-750px);
+        animation-delay: 2.5s;
+    }  
+}

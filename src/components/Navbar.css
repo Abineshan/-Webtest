@@ -1,0 +1,74 @@
+.navb{
+    background: #000;
+    min-height: 100vh;
+}
+.glitch{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+    color: transparent;
+    letter-spacing: 8px;
+    /* z-index: 2; */
+    /* -webkit-text-stroke: 1px #fff; */
+    background-image: linear-gradient(#fff,#fff);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: -400px 0;
+    animation: backs 4s linear infinite alternate;
+}
+/* .glitch::before{
+    content: 'GLITCH';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: mov 0.2s linear infinite;
+    color: #e91e63;
+    z-index: -1;
+}
+
+.glitch::after{
+    content: 'GLITCH';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: mov 0.2s linear reverse infinite;
+    color: #2196f3;
+    z-index: -2;
+}
+
+@keyframes mov {
+    0%{
+        top: 0;
+        left: 0;
+    }
+    20%{
+        top: -5px;
+        left: -5px;
+    }
+    40%{
+        top: 5px;
+        left: 5px;
+    }
+    60%{
+        top: -5px;
+        left: 5px;
+    }
+    80%{
+        top: 5px;
+        left: -5px;
+    }
+    100%{
+        top: 0px;
+        left: 0px;
+    }
+} */
+
+@keyframes backs {
+    100%{
+        background-position: 0 0;
+    }
+}
